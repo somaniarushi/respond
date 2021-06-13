@@ -22,7 +22,7 @@ Describes this DOM
 ```
 
 ## RESPOND Design Details
-1. Everything must have a type.
+1. Everything must have a type and a children field in the props.
 2. The "children" of a node must be a series of zero or more objects. 
 3. All event listeners added using Respond must be preceeded with "get". Example: getClick == click, getPress = press, etc
 
