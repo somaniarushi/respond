@@ -20,3 +20,6 @@ Describes this DOM
     <a href="/bar"></a>
 </div>
 ```
+
+## Respond Design Details
+All event listeners added using Respond must be preceeded with "get". Example: getClick == click, getPress = press, etc
