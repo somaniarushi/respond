@@ -1,11 +1,15 @@
 const isEventListener = (name) => (name.substring(0, 3)==="get");
 
-// TODO: Implement textNode.
 const render = (element, parent) => {
     const {type, props} = element;
 
     // Create DOM element.
-    const dom = document.createElement(type);
+    let dom;
+    if (type === "plain-text") {
+        dom = document.createTextNode(props.value || "")
+    } else {
+        dom = document.createElement(type);
+    }
 
     for (let prop in props) {
         // Add event Listeners
