@@ -1,6 +1,5 @@
 const isEventListener = (name) => (name.substring(0, 3)==="get");
 
-// TODO: Add listeners passed in through elements to the dom element being generated.
 // TODO: Implement textNode.
 const render = (element, parent) => {
     const {type, props} = element;
