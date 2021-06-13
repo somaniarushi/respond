@@ -1,8 +1,6 @@
-import {render} from '../responDOM.js';
+import {RespondDOM} from '../responDOM.js';
 
 function runner() {
-    const root = document.getElementById('root');
-    console.log("Got in here, whattt")
     const elem = {
         type: "div",
         props: {
@@ -13,7 +11,7 @@ function runner() {
             style: "background-color: grey;"
         }
     }
-    render(elem, root)
+    RespondDOM.render(elem, document.getElementById('root'));
 }
 
 runner();

@@ -1,6 +1,6 @@
 const isEventListener = (name) => (name.substring(0, 3)==="get");
 
-export const render = (element, parent) => {
+const render = (element, parent) => {
     const {type, props} = element;
 
     // Create DOM element.
@@ -32,3 +32,5 @@ export const render = (element, parent) => {
     // Append current node to parent-node in DOM.
     parent.appendChild(dom);
 }
+
+export const RespondDOM = {render};
