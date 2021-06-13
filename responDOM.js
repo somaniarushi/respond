@@ -1,6 +1,6 @@
 const isEventListener = (name) => (name.substring(0, 3)==="get");
 
-const render = (element, parent) => {
+export const render = (element, parent) => {
     const {type, props} = element;
 
     // Create DOM element.
