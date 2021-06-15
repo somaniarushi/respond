@@ -33,4 +33,5 @@ const render = (element, parent) => {
     parent.appendChild(dom);
 }
 
-export const RespondDOM = {render};
+const RespondDOM = {render};
+export default RespondDOM;

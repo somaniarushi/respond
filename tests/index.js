@@ -1,6 +1,8 @@
-import {RespondDOM} from '../responDOM.js';
+import RespondDOM from '../respond-dom.js';
+import Respond from '../respond.js';
 
 function runner() {
+    console.log("runner");
     const elem = {
         type: "div",
         props: {
