@@ -3,16 +3,11 @@ import Respond from '../respond.js';
 
 function runner() {
     console.log("runner");
-    const elem = {
-        type: "div",
-        props: {
-            id: "root-child",
-            children: [
-                {type: "plain-text", props: {value: "Hello World!", children:[]}}
-            ],
-            style: "background-color: grey;"
-        }
-    }
+
+    const elem = Respond.createElement('div', 
+            {id: 'root-child', style: 'background-color: grey;'}, 
+            [Respond.createTextElement({}, 'Hello World!')]
+        );
     RespondDOM.render(elem, document.getElementById('root'));
 }
 

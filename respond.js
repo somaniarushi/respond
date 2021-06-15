@@ -14,6 +14,7 @@ function createElement(type, config, children) {
 function createTextElement(config, text) {
     const props = Object.assign({}, config);
     props.value = text;
+    props.children = [];
     return {type: 'plain-text', props};
 }
 
